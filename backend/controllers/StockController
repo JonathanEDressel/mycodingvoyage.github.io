@@ -1,0 +1,88 @@
+const Stock = require('../models/StockModel');
+const mongoose = require('mongoose');
+
+//get all stocks
+const getStocks = async function (req, res) {
+    const stocks = await Stock.find({}).sort({createAt: -1});
+    return res.status(200).json(stocks);
+}
+
+//get single stock
+const getStock = async function (req, res) {
+    const {name} = req.params;
+
+    if(typeof name !== 'string') {
+        return res.status(404).json({error: 'Invalid stock'});
+    } 
+    try {
+        //ignore case
+        const stock = await Stock.findOne({name: new RegExp(`^${name}$`, 'i') });
+                
+        if(!stock) {
+            return res.status(404).json({error: 'Stock not found'});
+        }
+        return res.status(200).json(stock);
+    } catch(error) {
+        return res.status(400).json({error: error.message});
+    }
+}
+
+//create new stock
+const createStock = async function(req, res) {
+    const {name, shares, investment_amount} = req.body;
+
+    try {
+        const stock = await Stock.create({name, shares, investment_amount});
+        return res.status(200).json(stock);
+    } 
+    catch(error) {
+        return res.status(400).json({error: error.message});
+    }
+}
+
+//delete stock
+const deleteStock = async function (req, res) {
+    const {name} = req.params;
+
+    if(typeof name !== 'string') {
+        return res.status(404).json({error: 'Invalid stock'});
+    }  
+    try {
+        const stock = await Stock.findOneAndDelete({name: name});
+        if(!stock)
+            return res.status(404).json({error: 'Stock not found'});
+        return res.status(200).json(stock);
+    } 
+    catch(error) {
+        return res.status(400).json({error: error.message});
+    }
+}
+
+//update stock
+const updateStock = async function (req, res) {
+    const {name} = req.params;
+
+    if(typeof name !== 'string') {
+        return res.status(404).json({error: 'Invalid stock'});
+    } 
+    try {
+        const stock = await Stock.findOneAndUpdate({name: name}, {
+            ...req.body
+        });
+
+        if(!stock)
+            return res.status(404).json({error: 'Stock not found'});
+        return res.status(200).json(stock);
+    } 
+    catch(error) {
+        return res.status(400).json({error: error.message});
+    }
+}
+
+module.exports = {
+    getStocks,
+    getStock,
+    createStock,
+    deleteStock,
+    updateStock
+}

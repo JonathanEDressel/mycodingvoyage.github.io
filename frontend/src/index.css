@@ -1,0 +1,88 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+  :root {
+    --primary: green;
+    --error: red;
+  }
+
+  body {
+    background: lightgray;
+    margin: 0;
+    font-family: "Poppins";
+  }
+
+  header {
+    background: #222221;
+  }
+
+  header .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header a {
+    color: whitesmoke;
+    padding: 5px;
+    border-bottom: 3px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: larger;
+  }
+
+  header a:hover {
+    color: #5fbb46
+  }
+
+  #pg-header {
+    justify-content: space-evenly;
+  }
+
+  .pages {
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: black;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+  }
+
+  .bio-details {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  .bio-details h4 {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.2em;
+    color: var(--primary);
+  }
+
+  .bio-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555
+  }
+
+  .bio-details span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 6px;
+    border: 50px;
+    color: #333;
+  }
