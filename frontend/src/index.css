@@ -41,11 +41,41 @@
     justify-content: space-evenly;
   }
 
-  .pages {
+  .intro-msg-one {
+    font-size: large;
+    color: whitesmoke;
+  }
+
+  .intro-msg-two {
+    font-size: large;
+    color: black;
+  }
+
+  .image-design {
+    max-width: 250px;
+    border-radius: 50px;
+  }
+
+  .reference-header {
+    font-size: 40px;;
+    color: whitesmoke;
+  }
+
+  .icon-design {
+    padding-right: 5px;
+    font-size: 20px;
+  }
+
+  .reference-item {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  .main-screen {
     max-width: 1400px;
     padding: 20px;
     margin: 0 auto;
-    background-color: black;
+    background-color: #CC5500;
   }
 
   .home {
