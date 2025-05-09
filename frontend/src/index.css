@@ -32,6 +32,10 @@
     color: black;
   }
 
+  .degree-container {
+    border-bottom: 2px dashed whitesmoke;
+  }
+
   .image-design {
     max-width: 250px;
     border-radius: 50px;
