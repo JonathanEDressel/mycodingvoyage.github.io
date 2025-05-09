@@ -23,7 +23,7 @@ function App() {
             <img class="image-design" src={CapImg}></img>
           </div>
         </div>
-        <div class="row">
+        <div class="row degree-container">
           <div class="col col-4 reference-container d-inline align-content-center">
             <div class="col col-12 text-center">
               <span>
@@ -96,7 +96,7 @@ function App() {
                 Associate Software Engineer  @
               </span>
               <span class="experience-company">
-               Electric Scooter Guide
+                Electric Scooter Guide
               </span>
             </div>
             <div class="col col-12 text-start">
@@ -186,24 +186,41 @@ function App() {
               </div>
 
               <div class="col col-12 text-start">
-                <span class="education-prompt">
-                  Dates 
-                </span>
                 <span class="eudcation-detail">
-                  : September 2018 - September 2022
+                  Bachelor of Science in Computer Science: September 2018 - June 2022
                 </span>
               </div>
-              <div class="col col-12 text-start pt-0">
-                <span class="education-prompt">
-                  Degree 
-                </span>
+
+              <div class="col col-12 text-start">
                 <span class="eudcation-detail">
-                  : Bachelor of Science in Computer Science
+                  GPA (3.65)
+                </span>
+              </div>
+              <div class="col col-12 text-start">
+                <span class="eudcation-detail">
+                  Cum Laude
+                </span>
+              </div>
+
+              <div class="col col-12 text-start">
+                <span class="eudcation-detail">
+                  Computer Science Teaching Asssistant: June 2020 - June 2021
+                </span>
+              </div>
+              <div class="col col-12 text-start">
+                <span class="eudcation-detail">
+                  Dean's List: March 2018 - March 2020
                 </span>
               </div>
 
             </div>
           </div>
+        </div>
+        <div class="row">
+          <div class="col col 12">
+            <FontAwesomeIcon></FontAwesomeIcon>
+          </div>
+
         </div>
     </div>
   );
