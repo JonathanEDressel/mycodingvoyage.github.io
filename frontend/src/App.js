@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CapImg from './assets/images/capthrow.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinus } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub  } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             </div>
           </div>
           <div class="col col-8 pb-3 img-container text-center">
-            <img class="image-design" src={CapImg}></img>
+            <img class="image-design" alt='Graduation photo' src={CapImg}></img>
           </div>
         </div>
         <div class="row degree-container">
@@ -217,8 +218,13 @@ function App() {
           </div>
         </div>
         <div class="row">
-          <div class="col col 12">
-            <FontAwesomeIcon></FontAwesomeIcon>
+          <div class="col col 12 text-end mt-3">
+            <a href='https://www.linkedin.com/in/jonathan-dressel/' target='_blank'>
+              <FontAwesomeIcon class="social-icon" icon={faLinkedin}></FontAwesomeIcon>
+            </a>
+            <a href='https://github.com/JonathanEDressel?tab=repositories' target='_blank'>
+              <FontAwesomeIcon class="social-icon" icon={faGithub}></FontAwesomeIcon>
+            </a>
           </div>
 
         </div>
