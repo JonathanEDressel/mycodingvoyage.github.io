@@ -8,5 +8,5 @@ My career portfolio
 - Implement emailjs service for employers who would like to contact me.
    - Add pop up/dropdown for contact info
 - Finish user interface
-- Add socials
+- ~~Add socials~~
 - Finish reference jumper
