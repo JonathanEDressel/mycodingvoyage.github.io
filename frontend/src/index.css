@@ -32,6 +32,17 @@
     color: black;
   }
 
+  .summary-intro {
+    text-indent: 2rem;
+    color: whitesmoke;
+    font-size: small;
+  }
+
+  .summary-paragraph {
+    color: whitesmoke;
+    font-size: small;
+  }
+
   .degree-container {
     border-bottom: 2px dashed whitesmoke;
   }
@@ -43,6 +54,15 @@
 
   .reference-container {
     border-right: 2px dashed whitesmoke;
+  }
+
+  .reference-follow {
+    position: sticky;
+    top: 0; 
+  }
+
+  .reference {
+    text-decoration: none;
   }
 
   .reference-header {
@@ -110,10 +130,24 @@
     color: whitesmoke;
   }
 
+  .footer {
+    position: sticky;
+    bottom: 0;
+  }
+
   .social-icon {
     color: whitesmoke;
     margin-right: 15px;
-    width: 35px;
-
+    width: 45px;
+    transition: transform 0.3s ease-in-out;
   }
 
+  .social-icon :hover {
+    transform: scale(1.05); 
+  }
+
+  .gmail-info {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 2%;
+  }
