@@ -115,7 +115,7 @@
   .education-college {
     font-style: italic;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: whitesmoke;
   }
 
@@ -125,8 +125,19 @@
   }
 
   .eudcation-detail {
-    font-size: 11px;
+    margin-left: 5px;
     font-style: italic;
+    color: whitesmoke;
+  }
+
+  .education-sub-detail {
+    font-size: small;
+    font-style: italic;
+    color: whitesmoke;
+  }
+
+  .education-other-details {
+    font-weight: 500;
     color: whitesmoke;
   }
 
@@ -136,7 +147,7 @@
   }
 
   .social-icon {
-    color: whitesmoke;
+    color: black;
     margin-right: 15px;
     width: 45px;
     transition: transform 0.3s ease-in-out;
