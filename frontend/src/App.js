@@ -1,4 +1,4 @@
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CapImg from './assets/images/capthrow.jpg';
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -221,38 +221,40 @@ function App() {
               </h3>
               <hr/>
             </div>
-            <div class="col col-12 text-start">
-                <span class="education-college">
-                  Oregon State University
-                </span>
+              <div class="row">
+                <div class="col col-8 text-start">
+                  <span class="education-college">
+                    Oregon State University -
+                  </span>
+                  <span class="eudcation-detail">
+                    Bachelor of Science in Computer Science
+                  </span>
+                </div>
+                <div class="col col-4 text-end">
+                  <span class="eudcation-detail">
+                    2018 - 2022
+                  </span>
+                </div>
               </div>
-
-              <div class="col col-12 text-start">
-                <span class="eudcation-detail">
-                  Bachelor of Science in Computer Science: September 2018 - June 2022
-                </span>
-              </div>
-
-              <div class="col col-12 text-start">
-                <span class="eudcation-detail">
-                  GPA (3.65)
-                </span>
-              </div>
-              <div class="col col-12 text-start">
-                <span class="eudcation-detail">
-                  Cum Laude
-                </span>
-              </div>
-
-              <div class="col col-12 text-start">
-                <span class="eudcation-detail">
-                  Computer Science Teaching Asssistant: June 2020 - June 2021
-                </span>
-              </div>
-              <div class="col col-12 text-start">
-                <span class="eudcation-detail">
-                  Dean's List: March 2018 - March 2020
-                </span>
+              <div class="row">
+                <div class="col col-12 text-start">
+                  <span class="education-other-details">
+                    Academic Achievements & Clubs:
+                  </span>
+                </div>
+                <div class="col col-12 text-start">
+                  <ul class="education-sub-detail">
+                    <li>
+                      Dean's List: March 2018 - March 2020
+                    </li>
+                    <li>
+                      Computer Science Teaching Asssistant: June 2020 - June 2021
+                    </li>
+                    <li>
+                      Varsity House Network Administrator: June 2019 - June 2021
+                    </li>
+                  </ul>
+                </div>
               </div>
           </div>
         </div>
