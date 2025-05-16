@@ -2,8 +2,7 @@
 
   .main-screen {
     border-radius: 10px;
-    max-width: 1400px;
-    padding: 20px;
+    padding-top: 10px;
     margin: 0 auto;
     background-color: #CC5500;
   }
@@ -137,19 +136,24 @@
   }
 
   .education-other-details {
-    font-weight: 500;
+    font-weight: 300;
     color: whitesmoke;
   }
 
+  .college-logo {
+    width: 75px;
+  }
+
   .footer {
+    background-color: black;
     position: sticky;
     bottom: 0;
   }
 
   .social-icon {
-    color: black;
+    color: whitesmoke;
     margin-right: 15px;
-    width: 45px;
+    width: 25px;
     transition: transform 0.3s ease-in-out;
   }
 

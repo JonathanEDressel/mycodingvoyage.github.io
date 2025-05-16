@@ -1,17 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CapImg from './assets/images/capthrow.jpg';
+import CollegeLogo from './assets/images/college-logo.jpg'
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinus, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Button } from 'bootstrap';
-// import Button from "react-bootstrap/Button";
 
 function App() {
   return (
     <div class="container main-screen">
         <div class="row d-flex justify-content-center">
-          <div class="col col-4 intro-container d-inline align-content-center text-center"> 
+          <div class="col col-3 intro-container d-inline align-content-center text-center"> 
             <div class="col col-12">
               <span class="intro-msg-one"> 
                 Hi There,
@@ -28,12 +27,12 @@ function App() {
               </span>
             </div>
           </div>
-          <div class="col col-8 pb-3 img-container text-center">
+          <div class="col col-9 pb-3 img-container text-center">
             <img class="image-design" alt='Graduation photo' src={CapImg}></img>
           </div>
         </div>
         <div class="row degree-container">
-          <div class="col col-4 reference-container d-inline text-center">
+          <div class="col col-3 reference-container d-inline text-center">
             <div class="row reference-follow">
               <div class="col col-12 text-center">
                 <span>
@@ -66,8 +65,7 @@ function App() {
               </div>
             </div>
           </div>
-
-          <div class="col col-8 text-center mt-2">
+          <div class="col col-9 text-center mt-2">
             <div class="col col-12 text-center" id="summary">
               <h3 class="section-header">
                 Summary
@@ -242,7 +240,7 @@ function App() {
                     Academic Achievements & Clubs:
                   </span>
                 </div>
-                <div class="col col-12 text-start">
+                <div class="col col-6 text-start">
                   <ul class="education-sub-detail">
                     <li>
                       Dean's List: March 2018 - March 2020
@@ -258,11 +256,11 @@ function App() {
               </div>
           </div>
         </div>
-        <div class="row footer">
-          <div class="col col-12 text-start ms-3 mb-3 mt-3">
-            <span href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jonathanedressel@gmail.com&su=Contacting to Learn More" target="_blank">
+        <div class="row footer p-1">
+          <div class="col col-6 text-start d-flex align-items-center">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jonathanedressel@gmail.com&su=Software Engineering Opportunity" target="_blank">
               <FontAwesomeIcon class="social-icon" icon={faEnvelope}></FontAwesomeIcon>
-            </span>
+            </a>
             <a href='https://www.linkedin.com/in/jonathan-dressel/' target='_blank'>
               <FontAwesomeIcon class="social-icon" icon={faLinkedin}></FontAwesomeIcon>
             </a>
@@ -270,7 +268,11 @@ function App() {
               <FontAwesomeIcon class="social-icon" icon={faGithub}></FontAwesomeIcon>
             </a>
           </div>
-
+          <div class="col col-6 text-end">
+            <a href='https://oregonstate.edu/' target='_blank'>
+              <img class="college-logo" alt="Oregon State University Logo" src={CollegeLogo}></img>
+            </a>
+          </div>
         </div>
     </div>
   );
