@@ -117,8 +117,8 @@ function App() {
             <div class="col col-12 text-start">
               <ul class="experience-details">
                 <li>
-                  Launched the launch of PensionPortal, enhancing pension plan comprehension for over 10,000 government employees through
-                  intuitive UI design and real-time data updates
+                  Directed the launch of PensionPortal, enhancing pension plan comprehension for over 10,000 employees through
+                  intuitive database design and real-time data updates
                 </li>
                 <li>
                   Managed two production servers using Azure, Docker, and Kubernetes, achieving 99.9% uptime and optimizing web service
@@ -171,7 +171,7 @@ function App() {
             <div class="col col-12 text-start">
               <ul class="experience-details">
                 <li>
-                  Developed the CAMP website for over 5,000 HP employees, streamlining access to hundreds of critical tools through intuitive UI
+                  Developed the CAMP website for over 58,000 HP employees, streamlining access to hundreds of critical tools through intuitive UI
                   design and scalable infrastructure
                 </li>
                 <li>
